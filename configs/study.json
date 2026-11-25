@@ -1,0 +1,14 @@
+{
+  "seeds": [3, 13, 23, 33, 43],
+  "qubits": [4, 6],
+  "train_sizes": [192, 384],
+  "validation_size": 192,
+  "test_size": 384,
+  "epochs": 22,
+  "conditions": [
+    {"name": "ideal", "shots": 0, "mix": 0.0},
+    {"name": "shots1024", "shots": 1024, "mix": 0.0},
+    {"name": "shots256", "shots": 256, "mix": 0.0},
+    {"name": "noisy256", "shots": 256, "mix": 0.08}
+  ]
+}

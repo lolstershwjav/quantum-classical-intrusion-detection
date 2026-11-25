@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-classical-intrusion-detection"
+version = "0.1.0"
+description = "Matched quantum and classical intrusion detection benchmark"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy==2.3.5",
+  "pandas==2.2.3",
+  "scikit-learn==1.8.0",
+  "torch==2.15.0",
+]
+
+[project.optional-dependencies]
+report = ["matplotlib==3.10.8", "reportlab==4.4.9"]
+
+[tool.setuptools.packages.find]
+include = ["qids*"]
